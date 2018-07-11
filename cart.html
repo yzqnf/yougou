@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>订单提交中心</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <div class="yg_header">
+    <div class="header">
+      <!-- 左边 -->
+      <div class="mall_box lf">
+        <a href="">时尚商城</a>
+      </div>
+      <div class="phone_box lf">
+        <a href="">
+          <i class="phone"></i>
+          整点降价
+          <i class="tip"></i>
+        </a>
+        <div class="phone_con">
+          <p>
+            <img src="image/header/app-rqcode.jpg" alt="">
+          </p>
+          <p class="text">
+            <span class="lf">下载安装 <strong>优购客户端</strong></span>
+            <span class="rf">优购时尚商城</span>
+          </p>
+        </div>
+      </div>
+      <!-- 右边 -->
+      <div class="about_user rf">
+        <!--<div class="login lf">-->
+          <!--<a href="login.html">登录</a>-->
+          <!--<a href="register.html" class="zc">注册</a>-->
+        <!--</div>-->
+        <!--about_user end -->
+        <div class="yougou lf">
+          <a href="">我的优购</a>
+          <i></i>
+          <ul>
+            <li>
+              <a href="">我的收藏</a>
+            </li>
+          </ul>
+        </div>
+        <div class="order lf">
+          <a href="">我的订单</a>
+        </div>
+        <div class="notice lf">
+          <span>公告</span>
+          <i></i>
+          <ul>
+            <li>
+              <a href="">关闭分享购频道</a>
+            </li>
+            <li>
+              <a href="">提醒会员谨防诈骗电话</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header_more rf">
+          <a href="#" class="more_text">更多</a>
+          <ul class="more_con">
+            <li><a href="">收藏优购</a></li>
+            <li><a href="">帮助</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="logo_tab clear">
+    <h1 class="logo">
+      <a href="index.html" title="优生活，购时尚">
+        <img src="image/header/logo-yg.png" alt="优购时尚商城">
+      </a>
+    </h1>
+    <div class="cart_step">
+      <ul>
+        <li class="current">我的购物车<em></em><i></i></li>
+        <li>提交订单中心<em></em><i></i></li>
+        <li>成功提交订单<em></em><i></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main">
+    <div id="shopping-cart">
+      <!--2.2 内容块-->
+      <div id="box">
+        <!--2.2.1 内容-->
+        <div id="content-box">
+          <div class="imfor-top">
+            <div class="check-top">
+              <img src="image/cart/product_normal.png" alt="">
+              全选
+            </div>
+            <div class="product-top">商品名称</div>
+            <div class="color-top">颜色尺码</div>
+            <div class="price-top">单价</div>
+            <div class="num-top">数量</div>
+            <div class="total-top">小计(元)</div>
+            <div class="del-top">操作</div>
+          </div>
+          <div id="content-box-body">
+            <!--1、商品1-->
+            <div class="imfor">
+              <div class="check">
+                <img src="image/cart/product_normal.png" alt="">
+              </div>
+              <div class="product">
+                <a href="#">
+                  <img src="image/pics/adidas/md/100523041_01_m.jpg" alt="">
+                </a>
+                <span class="desc">
+                  <a href="#">adidas Originals阿迪三叶草2018男子TREFOIL T-SHIRT圆领短T恤CW0709</a>
+                </span>
+              </div>
+              <div class="pcolor">
+                <p>颜色：<em class="f_gray">黑</em></p>
+                <p>尺码：<em class="f_gray">XL</em></p>
+              </div>
+              <div class="price">
+                <p class="price-desc">
+                  <b>￥</b>3998.00</p>
+              </div>
+              <div class="num">
+                <span class="reduce">&nbsp;-&nbsp;</span>
+                <input type="text" value="1">
+                <span class="add">&nbsp;+&nbsp;</span>
+              </div>
+              <div class="total-price">
+                <span>￥</span>
+                <span>3998</span>
+              </div>
+              <div class="del">
+                <a href="#">删除</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--2.2.2 计算-->
+        <div class="foot">
+          <div class="base">
+            <div class="all">
+              <span>
+                <img id="footerCheckAll" src="image/cart/product_normal.png" alt="">
+              </span>
+              全选
+            </div>
+            <a href="#">删除</a>
+            <div class="foot-qk">清空失效产品</div>
+          </div>
+          <div class="go-price">
+            <div class="foot-tol">
+              <span>合计(不含运费)：</span>
+              <span class="foot-price">0.00</span>
+              <span class="foot-desc">元</span>
+            </div>
+            <div class="foot-cash">去结算</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p class="tright">Copyright &copy; 2011-2014 Yougou Technology Co., Ltd.&nbsp;&nbsp;
+      <a href="" target="_blank">粤ICP备09070608号-4</a>
+      &nbsp;增值电信业务经营许可证：&nbsp;
+      <a href="" target="_blank">粤 B2-20090203</a>
+    </p>
+  </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

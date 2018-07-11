@@ -1,0 +1,194 @@
+/*************main************/
+.main{
+  width:1190px;
+  margin:auto;
+}
+.classifyTop{
+  height:281px;
+  display: flex;
+  justify-content: space-between;
+}
+.classifyTop>.classify{
+  width:296px;
+  height:281px;
+  background: #fff;
+}
+.classifyTop>.classify>p{
+  width: 296px;
+  height: 56px;
+  background: url(../image/pics/yun_dong_01.png);
+}
+.classifyTop>.classify>p>b{
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  line-height: 45px;
+  font-size: 16px;
+  color: #000;
+  display: inline-block;
+}
+.classifyTop>.classify>img{
+  width: 296px;
+}
+.classifyTop>.classify>.classifyList{
+  width: 100%;
+  height: 90px;
+}
+.classifyTop>.classify>.classifyList>ul{
+  margin-left: 50px;
+}
+.classifyTop>.classify>.classifyList>ul>li{
+  margin-bottom: 6px;
+  text-align: left;
+}
+.classifyTop>.classify>.classifyList>ul>li>a{
+  margin: 0 10px 0 8px;
+  word-spacing : 9px;
+  width: 48px;
+  text-align: center;
+  display: inline-block;
+}
+
+.classifyContent>.hotbrand>.hd{
+  font-size: 17px;
+  margin-top: 30px;
+  line-height: 34px;
+  color: #111111;
+  border-bottom: 3px solid #000;
+}
+.classifyContent>.hotbrand>.hd>span{
+  margin-left: 6px;
+  color: #666;
+  font-size: 14px;
+}
+.classifyContent>.hotbrand>.hd>a{
+  float: right;
+  margin-right: 10px;
+}
+.classifyContent>.hotbrand>.bd{
+  height: 110px;
+  padding: 20px 0px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.classifyContent>.hotbrand>.bd>ul{
+  margin: 0 40px;
+}
+.classifyContent>.hotbrand>.bd>ul>li{
+  float: left;
+  height: 110px;
+  text-align: center;
+}
+.classifyContent>.hotbrand>.bd>ul>li>a{
+  float: left;
+  width: 110px;
+  height: 50px;
+  margin-top: 5px;
+}
+.classifyContent>.hotbrand>.bd>ul>li>a>img{
+  margin-top: 5px;
+  height: 40px;
+  width: 85px;
+}
+.classifyContent>.hotbrand>.bd>ul>li>.empty{
+  width: 110px;
+  height: 50px;
+  display: inline-block;
+  margin: 5px 0 0 0;
+  float: left;
+  background: #e7e7e7;
+}
+.classifyContent>.chn_md{
+  margin-top: 30px;
+  height:372px;
+}
+.chn_md>.hd{
+  clear: both;
+  height: 30px;
+  margin-bottom: 20px;
+  border-bottom:2px solid #666;
+}
+.chn_md>.hd>h2{
+  font-size: 18px;
+  float: left;
+  padding-left: 8px;
+}
+.chn_md>.hd>ul{
+  float: right;
+  border-right: 1px solid #bbb;
+}
+.chn_md>.hd>ul>li{
+  border:1px solid #bbb;
+  float: left;
+  width: 135px;
+  height: 30px;
+  text-align:center;
+  font-size:14px;
+  border-bottom: 0;
+  border-right: 0;
+}
+.chn_md>.hd>ul>li>a{
+  line-height: 30px;
+}
+.chn_md>.hd>ul>li.on{
+  background: #666;
+}
+.chn_md>.hd>ul>li.on>a{
+  color: #fff;
+}
+.chn_md>.bd{
+  display: none;
+}
+.chn_md>.bd>.mdlist{
+  width: 1188px;
+  height: 320px;
+  float: right;
+  position: relative;
+}
+.chn_md>.bd>.mdlist>ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.chn_md>.bd>.mdlist>ul>li{
+  width: 232px;
+  height: 322px;
+  display: inline;
+}
+.chn_md>.bd>.mdlist>ul>li>.img{
+  width: 230px;
+  height: 238px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  text-align: center;
+}
+.chn_md>.bd>.mdlist>ul>li>.img>a>img{
+  width: 100%;
+}
+.chn_md>.bd>.mdlist>ul>li>.cnt{
+  height: 62px;
+}
+.chn_md>.bd>.mdlist>ul>li>.cnt>p:first-child{
+  background: #f0a1a1;
+  color: #fff;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+.chn_md>.bd>.mdlist>ul>li>.cnt>p:first-child>span{
+  font-weight: bold;
+}
+.chn_md>.bd>.mdlist>ul>li>.cnt>p:nth-child(2)>span{
+  margin:5px 20px;
+
+}
+.chn_md>.bd>.mdlist>ul>li>.cnt>p:last-child{
+  color: #e60012;
+  font-weight: bold;
+  font-size: 17px;
+}
+.chn_md>.bd>.mdlist>ul>li>.cnt>p:last-child>s{
+  margin-left: 8px;
+  color: #666;
+  font-weight: normal;
+  font-size: 12px;
+}

@@ -1,0 +1,195 @@
+/*************main************/
+.main{
+  width:1190px;
+  margin:auto;
+}
+.mmbrshp_hd{
+  height: 95px;
+  width: 100%;
+  background: #fff;
+  border-bottom: 2px solid #93301d;
+  z-index: 5;
+}
+.mmbrshp_content{
+  width:1190px;
+  margin:auto;
+  position: relative;
+}
+.mmbrshp_hd .mmbrshp_hd_logn{
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #e7e7e7;
+  width: 198px;
+  height: 100px;
+  padding-bottom: 15px;
+  z-index: 10;
+}
+.mmbrshp_hd_logn>.hd{
+  padding: 8px 0 0 20px;
+  width: 182px;
+  position: relative;
+  left: -2px;
+  overflow: hidden;
+}
+.mmbrshp_hd_logn>.hd>p{
+  line-height: 22px;
+}
+.mmbrshp_hd_logn>.hd>p.grade{
+  font-size: 14px;
+}
+.mmbrshp_hd_logn>.hd>p.grade>.cred{
+  font-weight: bold;
+  color: #f00;
+}
+.mmbrshp_hd_logn>.grade>.cred{
+  font-weight: bold;
+  font-size: 14px;
+  color: #f00;
+  margin-left: 20px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+.mmbrshp_hd_logn>.bd{
+  position: relative;
+  right: 1px;
+  background: #fff;
+  margin-top: 11px;
+  width: 198px;
+  height: 0px;
+  border: 1px solid #e7e7e7;
+  border-top:0 ;
+  transition: all .3s linear;
+  overflow: hidden;
+}
+.mmbrshp_hd_logn>.bd>ul{
+  width: 160px;
+  margin: 0 auto;
+}
+.mmbrshp_hd_logn>.bd>ul>li{
+  border-bottom: 1px dashed #ccc;
+  margin-top: 5px;
+  height: 18px;
+}
+.mmbrshp_hd_nav{
+
+}
+.mmbrshp_hd_nav>p{
+  text-align: center;
+}
+.mmbrshp_hd_nav>p>a{
+  background: url(../image/index/membership-sprite.png) no-repeat -381px 1px;
+  display: inline-block;
+  width: 180px;
+  height: 56px;
+  overflow: hidden;
+  margin-top: 18px;
+}
+.grade_banner{
+  background: url(../image/index/bg_integral.png);
+  height: 190px;
+  font-family: \5FAE\8F6F\96C5\9ED1;
+  margin-bottom: 30px;
+}
+.grade_banner .hd{
+  font-size: 40px;
+  text-align: center;
+  padding-top: 12px;
+  height: 79px;
+  overflow: hidden;
+}
+.grade_banner .hd p{
+  color: #fff;
+}
+.grade_banner .hd .line{
+  background: #00a4e0;
+  border-bottom: 1px solid #80ddff;
+  height: 2px;
+  width: 424px;
+  margin: 5px auto;
+}
+.grade_banner .bd{
+  font-size: 14px;
+  text-align: center;
+}
+.grade_banner .bd p{
+  color: #fff;
+}
+
+.clearfix{
+  width: 1190px;
+  height: 640px;
+  display:inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.clearfix li{
+  width: 380px;
+  height: 193px;
+  position: relative;
+  border: 1px solid #CDCDCD;
+  border-image: initial;
+  background: #00BAFF;
+}
+.clearfix li .hd{
+  border-right: 1px #8f8f8f dashed;
+  width: 175px;
+  background: #fff;
+  height: 193px;
+  position: absolute;
+  left: 0px;
+  margin: 0;
+  text-align: center;
+}
+.clearfix li .hd h3{
+  height: 54px;
+  text-align: left;
+  font: bold 14px 微软雅黑;
+  margin: 10px auto 0px;
+  overflow: hidden;
+  padding: 0px 10px;
+  line-height: 24px;
+}
+.clearfix li .hd .cats{
+  width: 150px;
+  height: 110px;
+  margin: 0 auto;
+  background: url(../image/integral/integral_cats.jpg) no-repeat;
+}
+.clearfix li .bd{
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  width: 204px;
+}
+.clearfix li .bd .money{
+  font: bold 58px arial;
+  height: 63px;
+  color: #fff;
+  padding-top: 15px;
+}
+.clearfix li .bd .money em{
+  font-size: 64px;
+  font-style: normal;
+}
+.clearfix li .bd .note{
+  color: #004dfb;
+  font-size: 16px;
+  height: 42px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.clearfix li .bd p .exchng_btn{
+  color: #fff;
+  font: bold 16px/30px arial,微软雅黑;
+  text-align: center;
+  width: 135px;
+  margin: 0 auto 8px;
+  background: url(../image/index/bg_integral.png) 0 -192px no-repeat;
+  display: block;
+  height: 29px;
+}
+.clearfix li .bd p em{
+  font-style: normal;
+}

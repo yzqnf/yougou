@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>优购时尚商城-时尚服饰鞋包网购首选-优生活，购时尚！</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<style>
+		.logo_tab{
+			padding:20px 0 15px;
+			position:relative;
+			margin:0 auto;
+			width:990px;
+			z-index:10;
+		}
+		.logo_tab .logo{
+			background:url("image/header/logo_n.jpg")
+			width:203px;
+			height:89px;
+		}
+	</style>
+</head>
+<body>
+		<div class="main">
+				<iframe src="header.html" frameborder="0" id="header"></iframe>
+				<div class="logo_tab" >
+						<div class="logo">
+							<a href=""><img src="image/header/logo_n.jpg" alt=""></a>
+						</div>
+						<div class=""></div>
+						<div class=""></div>
+				</div>
+		</div>
+		<iframe src="footer.html" frameborder="0" id="footer"></iframe>
+</body>
+</html>

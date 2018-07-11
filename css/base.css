@@ -1,0 +1,41 @@
+body{
+	font:12px "微软雅黑",Arial;
+	color:#666;
+	margin:0;
+	padding:0;
+	background-color:#fff;
+}
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#666;
+}
+a:hover{
+	color:#e60012;
+}
+p{
+	color:#666;
+}
+img{
+	vertical-align:middle;
+	border:0;
+}
+.lf{
+	float:left;
+}
+.rf{
+	float:right;
+}
+.clear:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+#header{
+	height: 202px;
+}

@@ -1,0 +1,116 @@
+//js/details.js
+(function(){
+	if(location.search.indexOf("lid")!=-1){
+		var lid=location.search.split("=")[1];
+		ajax({
+			type:"get",
+			url:"data/products/getProductById.php",
+			data:"lid="+lid,
+			dataType:"json"
+		}).then(function(output){
+			alert('1111111');
+			var {pname, title, price, cost_price}=product;
+			document.querySelector("#show-details>.spec")
+				.innerHTML=`
+        <h1>${pname}</h1>
+        <h3>
+          <a href="">
+            更多${title}商品&gt;&gt;
+          </a>
+        </h3>
+        <!-- 价格部分-->
+        <div class="price">
+          <div class="stu-price">
+            <span>¥<i>${price}</i></span>
+            <del>¥ ${cost_price}&nbsp;</del>
+          </div>
+        </div>`;
+
+			var html="";
+			for(var {lid, spec} of specs){
+				html+=`<a href="product_details.html?lid=${lid}" class=${lid===product.lid?"active":""}>${spec}</a>`
+			}
+			document.querySelector("#show-details>div.spec>div")
+				.innerHTML=html;
+
+			document.getElementById("product-intro")
+				.innerHTML=product.details;
+
+			var html="";
+			for(var {sm, md, lg} of pics){
+				html+=`<li class="i1"><img src="${sm}" data-md="${md}" data-lg="${lg}"></li>`;
+			}
+			var LIWIDTH=62;
+			var ulPics=document.getElementById("icon_list");
+			ulPics.innerHTML=html;
+			ulPics.style.width=LIWIDTH*pics.length+"px";
+			var mImg=document.getElementById("mImg"),
+				  lgDiv=document.getElementById("largeDiv");
+			mImg.src=pics[0].md;
+			lgDiv.style.backgroundImage="url("+pics[0].lg+")";
+			if(pics.length<=5)
+				document.querySelector("#preview>h1>a.forward")
+					.className+=" disabled";
+			var moved=0,offset=20;
+			var aForward=
+				document.querySelector("#preview>h1>a.forward");
+			var aBackward=
+				document.querySelector("#preview>h1>a.backward");
+			aForward.onclick=function(e){
+				e.preventDefault();
+				var a=this;
+				if(a.className.indexOf("disabled")==-1){
+					moved++;
+					ulPics.style.left=-moved*LIWIDTH+offset+"px";
+					aBackward.className="backward";
+					if(pics.length-moved===5)
+						a.className+=" disabled";
+				}
+			}
+			aBackward.onclick=function(e){
+				e.preventDefault();
+				var a=this;
+				if(a.className.indexOf("disabled")==-1){
+					moved--;
+					ulPics.style.left=-moved*LIWIDTH+offset+"px";
+					aForward.className="forward";
+					if(moved===0)
+						a.className+=" disabled";
+				}
+			}
+
+			ulPics.onmouseover=function(e){
+				var tar=e.target;
+				if(tar.nodeName==="IMG"){
+					var {md, lg}=tar.dataset;
+					mImg.src=md;
+					lgDiv.style.backgroundImage="url("+lg+")";
+				}
+			}
+			var mask=document.getElementById("mask"),
+				  sMask=document.getElementById("superMask");
+			sMask.onmouseover=function(){
+				mask.style.display="block";
+				lgDiv.style.display="block";
+			}
+			sMask.onmouseout=function(){
+				mask.style.display="none";
+				lgDiv.style.display="none";
+			}
+			var MSIZE=175, SMSIZE=350;
+			sMask.onmousemove=function(e){
+				var left=e.offsetX-MSIZE/2;
+				var top=e.offsetY-MSIZE/2;
+				if(left<0) 
+					left=0; 
+				else if(left>SMSIZE-MSIZE)
+					left=SMSIZE-MSIZE;
+				top=top<0?0:top>SMSIZE-MSIZE?SMSIZE-MSIZE:top;
+				mask.style.left=left+"px";
+				mask.style.top=top+"px";
+				lgDiv.style.backgroundPosition=
+					-16/7*left+"px "+ -16/7*top+"px";
+			}
+		})
+	}
+})();

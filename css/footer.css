@@ -1,0 +1,247 @@
+
+/**********优购导购**********/
+.guide{
+  width:1190px;
+  margin:0 auto;
+  margin-top:30px;
+
+}
+.guide>h2{
+  border-bottom: 2px solid #808080;
+  color: #666;
+  font-size: 18px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  font-weight: normal;
+}
+.guide>.item_bom{
+  background:#fff;
+  height: 454px;
+  border: 1px solid #eee;
+  border-top: 0;
+  padding-top: 18px;
+  position: relative;
+}
+.guide>.item_bom>.btn{
+  width: 12px;
+  height: 22px;
+  color: #666;
+  display: block;
+  position: absolute;
+}
+.guide>.item_bom>.brand-left{
+  background: url(../image/index/sf-ico.png) no-repeat 0px -71px;
+  top: 129px;
+  left:12px;
+}
+.guide>.item_bom>.brand-right{
+  background: url(../image/index/sf-ico.png) no-repeat -13px -71px;
+  top: 129px;
+  right: 12px;
+}
+.guide>.item_bom>.brand-list{
+  width: 1081px;
+  height: 245px;
+  margin: 0 auto;
+  background: #e8e8e8;
+  overflow: hidden;
+}
+.guide>.item_bom>.brand-list>a{
+  color: #999;
+  float: left;
+  width: 89px;
+  height: 60px;
+  margin-left: 1px;
+  background: #fff;
+  text-align: center;
+  margin-top: 1px;
+  line-height: 12px;
+  overflow: hidden
+}
+.guide>.item_bom>.brand-list>a:hover{
+  color:#e60012;
+}
+.guide>.item_bom>.brand-list>a>img{
+  width: 85px;
+  height: 40px;
+}
+.rec_link{
+  margin-top: 20px;
+  text-align: left;
+}
+.rec_link>li{
+  width: 590px;
+  float: left;
+  height: 46px;
+  list-style: none;
+}
+
+.rec_link>li>dl{
+  width: 518px;
+  float: left;
+  margin-left: 37px;
+  display: inline;
+  height: 29px;
+  border-bottom: 1px dashed #e8e8e8;
+}
+.rec_link>li>dl>a:first-child{
+  height: 29px;
+  float: left;
+  width: 84px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.rec_link>li>dl>dd{
+  width: 370px;
+  height: 22px;
+  font-size: 14px;
+  float: left;
+}
+.rec_link>li>dl>dd>a{
+  margin-right: 16px;
+}
+.rec_link>li>dl>dt>a{
+  font-size: 14px;
+  float: right;
+}
+/*******footser*******/
+.footser{
+  width:1190px;
+  height: 171px;
+  margin:0 auto;
+  margin-top:30px;
+}
+.footser>.hd{
+  border: 1px #ddd solid;
+  height: 32px;
+  padding: 7px 50px;
+  margin-bottom: 10px;
+}
+.footser>.hd>li{
+  margin:0 50px;
+  float: left;
+  font: 18px '微软雅黑';
+  display: inline;
+}
+.footser>.hd>li>i{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.footser>.hd>li>.item1{
+  background: url(../image/index/sf-ico.png) no-repeat 0 -38px;
+}
+.footser>.hd>li>.item2{
+  background: url(../image/index/sf-ico.png) no-repeat -34px -38px;
+}
+.footser>.hd>li>.item3{
+  background: url(../image/index/sf-ico.png) no-repeat -66px -38px;
+}
+.footser>.hd>li>.item4{
+  background: url(../image/index/sf-ico.png) no-repeat -105px -38px;
+}
+.footser>.hd>li>a>em{
+  color: #e60012;
+  font-style: normal;
+}
+.footser>.hd>li>a:hover{
+  color: #666;
+}
+.footser>.bd{
+  padding-top: 5px;
+}
+.footser>.bd>ul{
+  width: 750px;
+  height: 100px;
+  float: left;
+}
+.footser>.bd>ul>li{
+  width: 150px;
+  float: left;
+}
+.footser>.bd>ul>li>a{
+  height: 25px;
+  float: left;
+  line-height: 25px;
+  margin:0 40px 0 5px;
+}
+.footser>.bd>ul>li>a:first-child{
+  font-weight: bold;
+}
+.footser>.bd>.yg_kf{
+  float: left;
+}
+.footser>.bd>.yg_kf>h4{
+  height: 25px;
+  line-height: 25px;
+  font-weight: bold;
+}
+.footser>.bd>.yg_kf>span{
+  line-height: 20px;
+}
+.footser>.bd>.yg_kf>span>a{
+  background: url(../image/index/newbase.png) no-repeat -315px -28px;
+  line-height: 20px;
+  padding-left: 30px;
+  display: inline-block;
+  margin: 6px 0;
+}
+.footser>.bd>.yg_kf>p{
+  padding-left: 3px;
+  line-height: 20px;
+  color: #666;
+}
+.footser>.bd>.yg_kf>p>span{
+  color: #e60012;
+}
+
+.footser>.bd>.ewm>.ewmL{
+  float: left;
+}
+.footser>.bd>.ewm>.ewmR{
+  float: left;
+  margin-left: 20px;
+}
+
+
+
+/****底部备案信息****/
+.footer{
+  position:relative;
+  top:20px;
+}
+.footinfo{
+  height:122px;
+  margin:0 auto;
+  background:#000;
+  border-bottom:3px solid #1f1c09;
+  min-width:990px;
+  box-sizing:border-box;
+  padding-top:5px;
+}
+.footinfo>.footwrap{
+  width:1190px;
+  height:94px;
+  margin:0 auto;
+}
+.footinfo>.footwrap>.lft{
+  float:left;
+}
+.footinfo>.footwrap>.lft>a>img{
+  margin-top:20px ;
+}
+.footinfo>.footwrap>.rgt>p{
+  text-align:right;
+  margin-bottom:5px;
+  color:#fff;
+}
+.footinfo>.footwrap>.rgt>p>a{
+  color:#fff;
+  margin:0 5px;
+}
+.footinfo>.footwrap>.rgt>p.endImg>a>img{
+  width: 108px;
+  height: 40px;
+}

@@ -1,0 +1,135 @@
+		div.content{
+			width:1000px;
+			margin:0 auto;
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:space-between;
+		}
+		div.content>div{
+			background:#ddd;
+			margin-bottom:15px;
+		}
+		/*第一个div*/
+		div.content>div:nth-child(1){
+			width:609px;
+			height:377px;
+			position:relative;
+		}
+		/*第二个div*/
+		div.content>div:nth-child(2){
+			width:381px;
+			height:377px;
+			position:relative;
+		}
+		/*第三个div*/
+		div.content>div:nth-child(3){
+			width:377px;
+			height:233px;
+			position:relative;
+		}
+		/*后面三个div*/
+		div.content>div.product{
+			width:198px;
+			height:233px;
+			position:relative;
+		}
+		/*上面的内容定义*/
+		div.content .desc{
+			width:240px;
+			position:absolute;
+			left:40px;
+			top:48px;
+		}
+		div.content p.name{
+			font-family:"黑体";
+			font-size:32px;
+			font-weight:bold;
+			margin-bottom:0;
+		}
+		div.content p.details{
+			font-size:12px;
+			color:#666;
+			margin-bottom:24px;
+			margin-top:0;
+		}
+		div.content p.price{
+			font-size:24px;
+			color:#0aa1ed;
+			margin-bottom:12px;
+		}
+		div.content .view{
+			text-decoration:none;
+			color:#fff;
+			width:130px;
+			height:40px;
+			line-height:40px;
+			border-radius:3px;
+			text-align:center;
+			background:linear-gradient(to bottom, #27b1f6 0%, #0aa1ed 100%);
+			display:inline-block;
+		}
+		/*下面的内容定义*/
+		div.content div.desc2{
+			width:149px;
+			position:absolute;
+			top:40px;
+			left:30px
+		}
+		div.content div.desc2 p.name1{
+			color:#333;
+			font-size:22px;
+		}
+		/*后三个*/
+		div.content div.product div.desc3{
+			width:240px;
+			position:absolute;
+			text-align:center;
+			bottom:15px;
+			left:-20px;
+		
+		}
+		div.content div.product div.desc3 p.name2{
+			font-size:12px;
+			color:#333;
+		}
+		div.content p.price2{
+			color:#0aa1ed;
+			margin-top:12px;
+			font-weight:bold;
+		}
+		div.content .view2{
+			text-decoration:none;
+			color:#fff;
+			font-size:14px;
+			width:102px;
+			height:28px;
+			line-height:28px;
+			border-radius:3px;
+			background:linear-gradient(to bottom, #27b1f6 0%, #0aa1ed 100%);
+			display:inline-block;
+		}
+		/*图片定位*/
+		div.content>div:nth-child(1)>img{
+			position:absolute;
+			top:56px;
+			right:30px;
+		}
+		div.content>div:nth-child(2)>img{
+			position:absolute;
+			bottom:20px;
+			right:25px;
+		}
+		div.content>div:nth-child(3)>img{
+			position:absolute;
+			top:40px;
+			right:15px;
+		}
+		div.content div.product>img{
+			position:absolute;
+			top:8px;
+			left:0;
+		}
+		img:hover{
+			transition:1s;
+			transform:scale(1.1,1.1);
+		}
