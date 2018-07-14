@@ -5,7 +5,7 @@ $(function(){
   $($prodSpec).on("click","a",function () {
     $(this).addClass("select").siblings().removeClass("select");
   });
-
+	/********请求商品详情*******/
 	if(location.search.indexOf("pid")!=-1){
 		var pid=location.search.split("=")[1];
 		$.ajax({
@@ -14,7 +14,7 @@ $(function(){
 			data:"pid="+pid,
 			dataType:"json"
 		}).then(function(output){
-			console.log('1111111');
+			//console.log('1111111');
       var {product,pics}=output;
       console.log(product);
 			var {pname, title, price, cost_price}=product;
